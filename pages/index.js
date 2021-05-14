@@ -17,6 +17,7 @@ export async function getStaticProps(context) {
   });
   return {
     props: { cuisines }, // will be passed to the page component as props
+    revalidate: 1,
   };
 }
 

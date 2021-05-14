@@ -19,6 +19,7 @@ export async function getStaticProps(context) {
 
   return {
     props: { cuisine: items[0].fields }, // will be passed to the page component as props
+    revalidate: 1,
   };
 }
 export async function getStaticPaths() {
