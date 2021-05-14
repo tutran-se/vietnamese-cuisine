@@ -53,7 +53,7 @@ export default function Detail({ cuisine }) {
   return (
     <>
       <Head>
-        <title>Vietnamese Cuisine | {cuisine.title}</title>
+        <title>Vietnamese Cuisine | {cuisine && cuisine.title}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
